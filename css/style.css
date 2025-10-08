@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    padding: 10px 150px 10px 150px;
+    background-color: #F5F5F5;
+    width: 100%;
+    border-bottom: 2px solid #CDCDCD;
+    text-align: center;
+}
+
+.nav-header {
+    padding-left: 500px;
+    display: inline;
+}
+
+.itens-header {
+    display: inline;
+}
+
+li {
+    display: inline;
+    list-style-type: none;
+}
+
+.nome-principal-header {
+    display: inline;
+    color: black;
+}
+
+.link-header {
+    color: black;
+}
+
+main {
+    border-bottom: 2px solid #FFFFFF;
+}
+
+h1 {
+    padding: 40px 20px 10px 20px;
+    font-size: 40px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 28px;
+    padding-bottom: 10px;
+}
+
+h3 {
+    padding: 10px 20px 20px 20px;
+    font-size: 18px;
+    font-weight: normal;
+    text-align: center;
+}
+
+.espacador {
+    height: 200px;
+}
+
+.area-informativa {
+    border-top: 2px solid #CDCDCD;
+    display: block;
+    background-color: #F5F5F5;
+    padding: 8px;
+    text-align: center;
+}
+
+.bloco-informativo {
+    display: inline-block;
+    border: 2px solid #CDCDCD;
+    width: 300px;
+    height: 250px;
+    padding: 10px;
+    margin: 20px;
+    text-align: left;
+}
+
+footer {
+    display: block;
+    padding: 10px;
+    background-color: #F5F5F5;
+    width: 100%;
+    text-align: center;
+
+}
