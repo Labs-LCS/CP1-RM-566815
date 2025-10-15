@@ -10,7 +10,7 @@
     <header>
         <span>
             <p class="nome-principal-header">1TDSPR</p>
-        </span>
+        </span> <!-- Desnecessário utilizar p dentro de span -->
         <nav class="nav-header">
             <ul class="itens-header">
                 <li><a href="" class="link-header">Home</a></li>
@@ -21,26 +21,28 @@
         </nav>
     </header>
     <main>
+        <!-- Aqui deveria ser section ou article -->
         <h1>Front-end Design Engineering</h1>
-        <h3>Checkpoint 01 - HTML/CSS</h3>
-        <div class="espacador"></div>
-        <section class="area-informativa">
-            <article class="bloco-informativo">
-                <h2> O que é HTML</h2>
+        <h3>Checkpoint 01 - HTML/CSS</h3> <!-- Poderia ser h2, mas não h3, pois perde o sentido com o h2 utilizado abaixo -->
+        <div class="espacador"></div> <!-- Não se pode utilizar div como espaçamento -->
+        <!-- Aqui deveria ser section ou article -->
+        <section class="area-informativa"> <!-- Em geral, section vai dentro de article e não o contrário -->
+            <article class="bloco-informativo"> <!-- Em geral, section vai dentro de article e não o contrário -->
+                <h2> O que é HTML</h2> <!-- Aqui, deveria ser h3 (considerando que o subtítulo deveria ser h2) -->
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt officiis provident sint repellendus vitae eos commodi vero earum. Consequuntur ea consequatur ipsa esse dolores molestias alias ratione blanditiis minima impedit.</p>
             </article>
             <article class="bloco-informativo">
-                <h2> O que é CSS</h2>
+                <h2> O que é CSS</h2> <!-- Aqui, deveria ser h3 (considerando que o subtítulo deveria ser h2) -->
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis natus exercitationem dicta ex voluptas quo accusamus omnis? Harum corporis maxime sunt enim ea odio officia officiis, voluptatum totam tempora nisi.</p>
             </article>
             <article class="bloco-informativo">
-                <h2>A Web Semântica</h2>
+                <h2>A Web Semântica</h2> <!-- Aqui, deveria ser h3 (considerando que o subtítulo deveria ser h2) -->
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores nam maxime aliquid blanditiis harum laboriosam iusto, reiciendis esse repellendus. Quos, quam praesentium iusto quas eveniet ut dolorum deleniti nulla? Corrupti.</p>
             </article>
         </section>
     </main>
     <footer>
-        <span>Feito para a turma 1TDSPR</span>
+        <span>Feito para a turma 1TDSPR</span> <!-- Span é um elemento genérico, então não tem valor semântico. O ideal é utilizar, por exemplo, algo como p -->
     </footer>
 </body>
 </html>
