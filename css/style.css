@@ -2,16 +2,18 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif; /* O seletor universal vai tentar atribuir uma fonte para elementos que não tem fonte. Portanto, o ideal é colocar esse atributo dentro do body (se colocado lá, o CSS vai tentar estilizar apenas os elementos de texo dentro do body, não qualquer elemento). */
 }
 
 header {
-    padding: 10px 150px 10px 150px;
+    padding: 10px 150px 10px 150px; /* 10px 150px também funcionaria e é mais simples */
     background-color: #F5F5F5;
     width: 100%;
     border-bottom: 2px solid #CDCDCD;
     text-align: center;
 }
+
+/* Todos os elementos, mesmo quando inline, devem ter um tamanho. Isso elimina a necessidade de posicionar com margin ou padding */
 
 .nav-header {
     padding-left: 500px;
@@ -19,6 +21,7 @@ header {
 }
 
 .itens-header {
+    /* Em vez de padding-left no .nav-header, deveria ser usado 'text-align: right', considerando o comentário acima */
     display: inline;
 }
 
@@ -42,6 +45,8 @@ main {
 
 h1 {
     padding: 40px 20px 10px 20px;
+    /* Para espaço em textos, o ideal é que o elemento de cima empurre o elemento de baixo */
+    /* Além disso, para textos, o posicionamento do entorno é feito, preferencialmente, por margin */
     font-size: 40px;
     text-align: center;
 }
@@ -53,6 +58,8 @@ h2 {
 
 h3 {
     padding: 10px 20px 20px 20px;
+    /* Para espaço em textos, o ideal é que o elemento de cima empurre o elemento de baixo (lembrando que eu misturei h2 e h3 no HTML - ver comentários lá) */
+    /* Além disso, para textos, o posicionamento do entorno é feito, preferencialmente, por margin */
     font-size: 18px;
     font-weight: normal;
     text-align: center;
@@ -67,7 +74,14 @@ h3 {
     display: block;
     background-color: #F5F5F5;
     padding: 8px;
+    /* text-align não deve ser usado para alinhar elementos de bloco (ainda que visualmente funcione) */
     text-align: center;
+}
+
+/* As propriedades abaixo fazem com que os elementos de bloco dentro do container fiquem centralizados */
+.container {
+    width: 86%;
+    margin: 0 auto;
 }
 
 .bloco-informativo {
